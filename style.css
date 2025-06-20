@@ -1,0 +1,248 @@
+
+
+@font-face{
+    src: url(fonts/LeagueSpartan-VariableFont_wght.ttf);
+    font-family: League Spartan;
+}
+
+@font-face{
+    src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+    font-family: Pixelify Sans;
+}
+
+@font-face{
+    src: url(fonts/WDXLLubrifontTC-Regular.ttf);
+    font-family: Lubrifont;
+}
+
+#email {
+    transition: transform 0.7s ease-in-out;
+    border-radius:20px;
+    margin:0;
+    padding:0;
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+}
+#home {
+    transition: transform 0.7s ease-in-out;
+    border-radius:20px;
+    margin:0;
+    padding:0;
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+    float:left
+}
+body {
+    margin:0;
+}
+header {
+    background-color:lightblue;
+    border-bottom: 3px dashed black
+}
+h1{
+    font-family: "Pixelify Sans",Arial;
+    color: white;
+}
+h2{
+    font-family: "Lubrifont";
+    color: white;
+}
+h3 {
+    font-family: "Lubrifont",Arial;
+    color: white;
+}
+p{
+    font-family:"League Spartan","courier new";
+    color: white;
+}
+#email:hover {
+    transform: rotate(360deg);
+}
+#top5games {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration:none;
+    width:100px;
+    height:33px;
+    border:none;
+    color:white;
+    background-color: rgb(255, 0, 68);
+    border-radius:4px;
+    box-shadow:inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.3s;
+    outline:none;
+    float:left;
+    margin-right:20px;
+    margin-left:20px;
+}
+#top5games:hover {
+    box-shadow:inset 100px 0 0 0 #f9e506;
+    cursor:pointer;
+    color: black;
+}
+.poster {
+    border:5px solid;
+    border-color:black
+}
+#consolevspc {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-decoration:none;
+    width:100px;
+    height:33px;
+    border:none;
+    color:white;
+    background-color: rgb(45, 45, 255);
+    border-radius:4px;
+    box-shadow:inset 0 0 0 0 lightblue;
+    transition: ease-out 0.3s;
+    outline:none;
+}
+#consolevspc:hover {
+    box-shadow: inset 100px 0 0 0 lightblue;
+    cursor:pointer;
+    color:black
+}
+.section1{
+    width:100%;
+    perspective: 1%;
+    transform-style:preserve-3d;
+}
+.section2{
+    width:100%;
+    perspective: 1%;
+    transform-style:preserve-3d;
+}
+.section1::before {
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    background:url(images/consoles.png) top center;
+    background-size: cover;
+}
+.heading{
+    font-family:"League Spartan";
+    font-size: 200px;
+    text-align:center;
+    color:white;
+    top:30%;
+    left:50%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),5px 5px 70px rgba(255,255,255,0.5);
+}
+.text{
+    top:30%;
+    left:50%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),5px 5px 70px rgba(255,255,255,0.5);
+    transform:scale(1,1,1) translate(-50%, 10%);
+}
+#console_button{
+    text-decoration:none;
+    background-color: rgb(45, 45, 255);
+    width:150px;
+    height:25px;
+    border:none;
+    color:white;
+    border-radius:4px;
+    box-shadow:inset 0 0 0 0 lightblue;
+    transition: ease-out 0.3s;
+    outline:none;
+}
+#console_button:hover{
+    box-shadow: inset 150px 0 0 0 lightblue;
+    cursor:pointer;
+    color:black
+}
+#pc_button{
+    text-decoration:none;
+    background-color: red;
+    width:150px;
+    height:25px;
+    border:none;
+    color:white;
+    border-radius:4px;
+    box-shadow:inset 0 0 0 0 rgb(221, 255, 0);
+    transition: ease-out 0.3s;
+    outline:none;
+}
+#pc_button:hover{
+    text-decoration: none;
+    box-shadow: inset 150px 0 0 0 rgb(221, 255, 0);
+    cursor:pointer;
+    color:black
+}
+.navbar {
+    background-color: rgb(101, 0, 108);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: auto;
+    min-height: 40px;
+    width: fit-content;
+}
+
+.navbar button img {
+    display: block;
+}
+
+.navbar button:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex; /* Changed from inline-block to inline-flex */
+    width: auto; /* Changed from fit-content to auto */
+    pointer-events: none; /* Add this line */
+}
+
+.navbar button {
+    pointer-events: auto; /* Add this line */
+}
+
+#home {
+    border-radius: 10px;
+}
+
+.nobg {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin-right: 0;
+    padding-right: 0;
+}
+main {
+    margin-bottom:0;
+    padding: 0px;
+    background-color:rgb(111, 6, 210)
+}
+
+footer {
+    padding: 0px;
+    text-align: left;
+    background-color:rgb(111, 6, 210)
+}
